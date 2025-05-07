@@ -1,7 +1,7 @@
 Aim: A book consists of chapters, chapters consist of sections and sections consist of subsections. Construct a tree and print the nodes. Find the time and space requirements of your method.
 Input:
 class TreeNode:
-    def _init_(self, name):
+    def __init__(self, name):
         self.name = name
         self.children = []
 
@@ -45,10 +45,10 @@ def build_book_tree():
     return book
 
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     book_tree = build_book_tree()
     print("📚 Book Structure:\n")
-    book_tree.print_tree() 
+    book_tree.print_tree()
 Output:
 📚 Book Structure:
 
